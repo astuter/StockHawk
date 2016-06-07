@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/net.simonvt.schematic/schematic/0.6.3/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f6f5730f19d22f177096c8d134d4892b0fbd631d">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/net.simonvt.schematic-schematic-0.6.3_f48f597c9d4ca8304db82616618553581ede4ba7.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-8.4.0_69356ab064da8f17e8968f7fa8b9957a9891eddb.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/android_sdk/adt-bundle-mac/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_92c60b982c4ee0d0efe48e916fe3c56282d60c2c.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-8.4.0_f349794be108086c06ebd0719a7d14550d71cc17.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_4baf172436a833418ea502ad420c95170c698624.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_bab08713b988e886499ac92a368b4865095d76bf.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.melnykov/floatingactionbutton/1.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="65620ba5e576dcec2c86efa440b00d042a27383b">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/com.melnykov-floatingactionbutton-1.2.0_278e036c7761f42e99fd0d51d5bed8d2d6067e99.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_4d38969fbac4a980d8bc58fa2e6856afb070e2fb.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/okio-1.6.0_afe1f584245239e7640c5469d829b0d034391083.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_e9940ce5ed275a3cc523a78bb5c753fe0f2b3bac.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.diogobernardino/williamchart/2.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1f159979917aba68421fb945854049367d206410">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/com.diogobernardino-williamchart-2.2_b841321ec52673dab3ff9d203f5c035210b6a8df.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/.gradle/caches/modules-2/files-2.1/net.simonvt.schematic/schematic-annotations/0.6.3/4df5a4bbbacf9ea3c4aebf7d3c61465afb648e36/schematic-annotations-0.6.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4df5a4bbbacf9ea3c4aebf7d3c61465afb648e36">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/schematic-annotations-0.6.3_cb449a220d66ed8cd560685e2ea9e89f9515d80b.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.4/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2a24cba08e1d865a79e61335f5a1bd64d520106d">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/me.zhanghai.android.materialprogressbar-library-1.1.4_ef1cd78a74e0a05211d0f00ee07bf4ae6819a225.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_b140b6018fe5424a8fdfaa61d01fd65ff3e7bb6c.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.4.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="85792c89098f72088ef905088d9b1479252e8fe6">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/com.afollestad.material-dialogs-core-0.8.4.2_f9c7604473acfc6b25534b709f5f8735933c4482.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-measurement-8.4.0_d347db7f6b864af18838d9d421ddb354e23ac8b8.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/okhttp-2.5.0_411438842fe67a14a6c30795094ae65f1629fc39.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.4.0_823ba043fdf6dffd88833159a8398a0a50a397d1.jar" />
+    </item>
+    <item
+        jar="/Users/aniruddh/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/aniruddh/Documents/AndroidstudioProjects/StockHawk/app/build/intermediates/pre-dexed/debug/library-2.4.0_75b94bb19c82f1d505cfdc3b06d8e575664d7517.jar" />
+    </item>
+
+</items>
