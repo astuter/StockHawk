@@ -8,9 +8,9 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.ActionBar;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
@@ -19,8 +19,14 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
+
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.google.android.gms.gcm.GcmNetworkManager;
+import com.google.android.gms.gcm.PeriodicTask;
+import com.google.android.gms.gcm.Task;
+import com.melnykov.fab.FloatingActionButton;
 import com.sam_chordas.android.stockhawk.R;
 import com.sam_chordas.android.stockhawk.data.QuoteColumns;
 import com.sam_chordas.android.stockhawk.data.QuoteProvider;
@@ -29,10 +35,6 @@ import com.sam_chordas.android.stockhawk.rest.RecyclerViewItemClickListener;
 import com.sam_chordas.android.stockhawk.rest.Utils;
 import com.sam_chordas.android.stockhawk.service.StockIntentService;
 import com.sam_chordas.android.stockhawk.service.StockTaskService;
-import com.google.android.gms.gcm.GcmNetworkManager;
-import com.google.android.gms.gcm.PeriodicTask;
-import com.google.android.gms.gcm.Task;
-import com.melnykov.fab.FloatingActionButton;
 import com.sam_chordas.android.stockhawk.touch_helper.SimpleItemTouchHelperCallback;
 
 public class MyStocksActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>{
@@ -46,6 +48,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
    */
   private CharSequence mTitle;
   private Intent mServiceIntent;
+  private ItemTouchHelper mItemTouchHelper;
   private static final int CURSOR_LOADER_ID = 0;
   private QuoteCursorAdapter mCursorAdapter;
   private Context mContext;
@@ -72,7 +75,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
       if (isConnected){
         startService(mServiceIntent);
       } else{
-        networkToast();
+        noInternetAlert();
       }
     }
     RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -83,14 +86,15 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
     recyclerView.addOnItemTouchListener(new RecyclerViewItemClickListener(this,
             new RecyclerViewItemClickListener.OnItemClickListener() {
               @Override public void onItemClick(View v, int position) {
-                Intent graphIntent = new Intent(mContext, StockDetailActivity.class);
-                mCursor.moveToPosition(position);
-                graphIntent.putExtra(getResources().getString(R.string.string_symbol), mCursor.getString(mCursor.getColumnIndex(getResources().getString(R.string.string_symbol))));
-                mContext.startActivity(graphIntent);
+                Cursor c = mCursorAdapter.getCursor();
+                c.moveToPosition(position);
+                String symbol = c.getString(c.getColumnIndex(QuoteColumns.SYMBOL));
+                Intent detailIntent = new Intent(getApplicationContext(), MyStockGraphActivity.class);
+                detailIntent.putExtra(Intent.EXTRA_TEXT, symbol);
+                startActivity(detailIntent);
               }
             }));
     recyclerView.setAdapter(mCursorAdapter);
-
 
     FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
     fab.attachToRecyclerView(recyclerView);
@@ -100,6 +104,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
           new MaterialDialog.Builder(mContext).title(R.string.symbol_search)
               .content(R.string.content_test)
               .inputType(InputType.TYPE_CLASS_TEXT)
+              .positiveText(R.string.action_add_stock)
               .input(R.string.input_hint, R.string.input_prefill, new MaterialDialog.InputCallback() {
                 @Override public void onInput(MaterialDialog dialog, CharSequence input) {
                   // On FAB click, receive user input. Make sure the stock doesn't already exist
@@ -109,7 +114,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
                       new String[] { input.toString() }, null);
                   if (c.getCount() != 0) {
                     Toast toast =
-                        Toast.makeText(MyStocksActivity.this, getResources().getString(R.string.error_saving),
+                        Toast.makeText(MyStocksActivity.this, R.string.stock_already_saved,
                             Toast.LENGTH_LONG);
                     toast.setGravity(Gravity.CENTER, Gravity.CENTER, 0);
                     toast.show();
@@ -124,14 +129,14 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
               })
               .show();
         } else {
-          networkToast();
+          noInternetAlert();
         }
 
       }
     });
 
     ItemTouchHelper.Callback callback = new SimpleItemTouchHelperCallback(mCursorAdapter);
-    ItemTouchHelper mItemTouchHelper = new ItemTouchHelper(callback);
+    mItemTouchHelper = new ItemTouchHelper(callback);
     mItemTouchHelper.attachToRecyclerView(recyclerView);
 
     mTitle = getTitle();
@@ -163,8 +168,10 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
     getLoaderManager().restartLoader(CURSOR_LOADER_ID, null, this);
   }
 
-  public void networkToast(){
-    Toast.makeText(mContext, getString(R.string.network_toast), Toast.LENGTH_SHORT).show();
+  public void noInternetAlert(){
+    TextView tv = (TextView) findViewById(R.id.no_internet);
+    tv.setText(R.string.no_internet_data_not_up_to_date);
+    tv.setVisibility(View.VISIBLE);
   }
 
   public void restoreActionBar() {

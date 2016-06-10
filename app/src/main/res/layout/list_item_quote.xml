@@ -27,8 +27,8 @@
         style="@style/BidPriceTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingRight="10sp"
         android:paddingEnd="10sp"
-        android:paddingStart="10sp"
         tools:text="1000.00"
         />
     <TextView
@@ -37,7 +37,9 @@
         style="@style/PercentChangeTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingStart="3dp"
         android:paddingLeft="3dp"
+        android:paddingEnd="3dp"
         android:paddingRight="3dp"
         tools:text="100%"
         />
